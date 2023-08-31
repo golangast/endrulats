@@ -1,0 +1,29 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+  <link rel="stylesheet" nonce="{{ .nonce }}" href="css/min.css">
+
+</head>
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+        <a href="#" ><img  class="brand-logo" nonce="{{ .nonce }}" src="img/go.png" alt="logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/about">What I am working on</a></li>
+            <li><a href="/about"></a></li>
+        </ul>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="/home">Home</a></li>
+</ul>
+<body>
+        <br><br>
+{{end}}

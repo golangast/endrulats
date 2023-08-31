@@ -1,0 +1,89 @@
+{{define "about"}}
+
+<div class="tab-pane fade " id="about" role="tabpanel" aria-labelledby="about-tab">
+
+<div class="row">
+  <div class="col-1 floatbar">
+    <div id="list-example" class="list-group">
+      <a class="floatbar-bars list-group-item list-group-item-action" href="#list-item-1">
+      ABout Me
+      </a>
+      <a class=" floatbar-bars list-group-item list-group-item-action" href="#list-item-2">Travel</a>
+      <a class="floatbar-bars list-group-item list-group-item-action" href="#list-item-3">Go</a>
+      <a class="floatbar-bars list-group-item list-group-item-action" href="#list-item-4">Nature</a>
+    </div>
+  </div>
+
+  <div class="col">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <div class="row">
+        <div class="col ">
+          <div class="card col s12 m6 l4">
+            <div class="card-image">
+              <img  class="brand-logo d-block w-100" style="transform: translate3d(-50%, 378.666px, 0px);opacity: 1;" nonce="{{ .nonce }}" src="img/me.jpg" alt="logo"></a>
+
+              <span class="card-title">Nature</span>
+            </div>
+            <div class="card-content">
+              <p> Going out for walks</p>
+            </div>
+            <div class="card-action">
+           
+            </div>
+          </div>
+          <div class="card col s12 m6 l4">
+            <div class="card-image">
+              <img  nonce="{{ .nonce }}" class="brand-logo d-block w-100" style="transform: translate3d(-50%, 378.666px, 0px);opacity: 1;" nonce="{{ .nonce }}" src="img/pizza.jpg" alt="logo"></a>
+
+              <span class="card-title">Making Pizza</span>
+            </div>
+            <div class="card-content">
+              <p> Love Pizza</p>
+            </div>
+            <div class="card-action">
+           
+            </div>
+          </div>
+          <div class="card col s12 m6 l4">
+            <div class="card-image">
+              <img  class="brand-logo d-block w-100" style="transform: translate3d(-50%, 378.666px, 0px);opacity: 1;" nonce="{{ .nonce }}" src="img/abe.jpg" alt="logo"></a>
+
+              <span class="card-title">Abraham Lincoln</span>
+            </div>
+            <div class="card-content">
+              <p> Love reading about Abraham Lincoln</p>
+            </div>
+            <div class="card-action">
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 id="list-item-2">
+   
+      <div class="parallax-container">
+        <div class="parallax"><img nonce="{{ .nonce }}" src="img/nia.jpg" style="transform: translate3d(-50%, 378.666px, 0px); opacity: 1;"></div>
+      </div>
+
+      </h4>
+      <h4 class="list-item-3 tac"><center>I enjoy writing Go.</center></h4>
+      <p class="tac">
+        I love writing go because it is easy and everyone writes it the same.
+        So it reading it becomes as easy as writing it.
+      </p>
+      <div class="parallax-container">
+        <div class="parallax"><img nonce="{{ .nonce }}" src="img/gocode.png" style="transform: translate3d(-50%, 378.666px, 0px); opacity: 1;"></div>
+      </div>
+
+      <h4 id="list-item-4">
+        
+      </h4>
+      <p>...</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+{{end}}

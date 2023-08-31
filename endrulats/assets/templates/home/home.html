@@ -1,0 +1,35 @@
+{{ template "header" . }}
+<ul class="nav nav-tabs tabshadow" id="toptab" role="tablist" style="border-bottom: 0px !important;    margin-bottom: -5px;">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link tabshadow" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab"
+      aria-controls="contact" aria-selected="true">Contact Me</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab"
+      aria-controls="about" aria-selected="true">About</button>
+  </li>
+ 
+</ul>
+<div class="tab-content" id="myTabContent">
+
+<div class="parallax-container">
+  <div class="parallax"><img src="img/fl.jpg" style="transform: translate3d(-50%, 378.666px, 0px); opacity: 1;"></div>
+</div>
+
+
+
+
+{{if .users}}
+{{range $i , $U := .users}}
+{{index $U}}
+{{end}}
+{{end}}
+
+
+  {{ template "contact" . }}
+  {{ template "about" . }}
+
+</div>
+
+
+{{ template "footer" . }}
